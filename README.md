@@ -1,9 +1,9 @@
-## MERN Store Management API
+# MERN Store Management API
 
 This repository contains a MERN (MongoDB, Express, React, Node.js) stack application for managing products, stores, and orders. 
 The project provides a set of HTTP APIs for creating, searching, and deleting products, stores, and orders. Additionally, it includes unit tests and integration tests to ensure the correctness of the API functionality.
 
-# Getting Started
+## Getting Started
 
 To get started with this project, you need to have Node.js and MongoDB installed on your machine.
 
@@ -32,14 +32,14 @@ Create a .env file in the root directory and add the following environment varia
 
 The server will start on http://localhost:5000.
 
-# Usage
+## Usage
 
 You can use Postman or any other API client to interact with the API endpoints. Below is a detailed description of each endpoint and its usage.
 
-# API Endpoints
-# Product Routes
+## API Endpoints
+## Product Routes
 
-1. Create Product
+1. ### Create Product
 
 - Endpoint: POST /api/products
 - Description: Create a new product in a specified store.
@@ -52,7 +52,7 @@ You can use Postman or any other API client to interact with the API endpoints. 
   }
 ```
 
-2. Search Products
+2. ### Search Products
 
 - Endpoint: GET /api/products/search
 - Description: Search for products by name within a specific store.
@@ -68,7 +68,7 @@ You can use Postman or any other API client to interact with the API endpoints. 
 GET /api/products/search?storeName=Store1&productName=Product
 ```
 
-3. Delete Product
+3. ### Delete Product
 
 - Endpoint: DELETE /api/products/:productId
 - Description: Delete a product by its ID.
@@ -79,9 +79,9 @@ GET /api/products/search?storeName=Store1&productName=Product
 }
 ```
 
-# Store Routes
+## Store Routes
 
-1. Create Store
+1. ### Create Store
 
 - Endpoint: POST /api/stores
 - Description: Create a new store.
@@ -93,7 +93,7 @@ GET /api/products/search?storeName=Store1&productName=Product
 }
 ```
 
-2. Delete Store
+2. ### Delete Store
 
 - Endpoint: DELETE /api/stores/:storeId
 - Description: Delete a store by its ID.
@@ -104,9 +104,9 @@ GET /api/products/search?storeName=Store1&productName=Product
 }
 ```
 
-# Order Routes
+## Order Routes
 
-1. Create Order
+1. ### Create Order
 
 - Endpoint: POST /api/orders
 - Description: Create a new order with specified products.
@@ -120,7 +120,7 @@ GET /api/products/search?storeName=Store1&productName=Product
 }
 ```
 
-2. Delete Order
+2. ### Delete Order
 
 - Endpoint: DELETE /api/orders/:orderId
 - Description: Delete an order by its ID.
@@ -131,10 +131,10 @@ GET /api/products/search?storeName=Store1&productName=Product
 }
 ```
 
-# Testing
+## Testing
 The project includes both unit tests and integration tests to ensure the correctness of the API endpoints.
 
-# Unit Tests
+## Unit Tests
 Unit tests are written using Jest to test individual components and functions of the application. These tests ensure that each function behaves as expected in isolation.
 
 To run unit tests, use the following command:
@@ -142,7 +142,7 @@ To run unit tests, use the following command:
 npm test
 ```
 
-Integration Tests
+## Integration Tests
 Integration tests are written to test the interaction between different components of the application, such as database operations and HTTP requests. These tests ensure that the API endpoints work correctly with the underlying data models and database.
 
 To run integration tests, use the following command:
